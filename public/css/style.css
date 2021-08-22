@@ -1,0 +1,393 @@
+/* 
+body{
+    font-family: "roboto";
+   
+}
+
+.titulo-nav{
+    color: #99d84a;
+}
+.nav-border{
+    border: 1px solid rgb(248, 244, 244);
+    box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.35);
+    margin-top: 10px;
+}
+h1{
+    padding: 0px 20px ;
+}
+h2{
+    font-weight: bolder;
+}
+h3{
+    padding: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.card {
+    text-align: center;
+    border: none;
+    padding: 30px;
+}
+
+.pie{
+    background-color:#99d84a;
+    color:white ;
+    padding: 20px;
+}
+ul{
+    list-style:none;
+}
+/* div{
+    border: 1px solid black;
+} 
+.suscribirse{
+    border-radius: 5px ;
+    background-color: #648f2c;
+    color: white;
+    border: none;
+}
+input[type="email"]
+{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 10px;
+
+}
+img{
+    width: 60px;
+}
+li{
+    font-weight: lighter;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    /* background-image: url(img/background3.jpg); */
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+}    
+    .container{
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+    }
+    .color-white{
+        color: white;
+    }
+    .color-gold{
+        color: rgb(236, 224, 46);
+    }
+
+
+.top-backg{
+    height: 120px;
+    background-image: url(../img/gifheader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    }
+    .top-backg img{
+        background-color: white;
+        border-radius: 7px;
+        padding: 4px;
+}
+
+.navbar{
+    border-top: 3px solid red;
+    }
+    .navbar li{
+        padding-left: 25px;
+    }
+    .bg-dark{
+        background-color: #131313!important;
+    }
+    .form-control {
+        background-color: #505050;
+        border: 1px solid black;
+    }
+    .form-control:focus{
+    background-color: #505050;
+}
+
+.dsouls{
+    background-image: url(../img/darksouls/ds2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px;
+    }
+    .dslc{
+        padding: 50px;
+        max-height: 400px;
+    }
+    .dsl-img{
+        box-shadow: 5px 5px 5px 3px rgba(73, 70, 70, 0.431);
+        max-width: 600px;
+    }
+    .dsl-info{
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .dsl-info h1, h2{
+        font-family: 'Bebas Neue';
+        font-size: calc(2.600rem);
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .dsl-info p{
+        font-size: calc(1.200rem);
+        margin-top: 35px;
+        margin-left: 20px;
+}
+
+.carro-cont{
+    margin-top: 100px;
+    }
+    .tlmj{
+        margin-top: 200px;
+        font-size: 65px;
+        background-color: #1b1f24;
+        border-top: 3px solid red;
+        text-align: center;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.cards-cont{
+    margin-top: 100px;
+    }
+    .card{
+        border: 1px solid black;
+        color: white;
+        margin: 30px;
+        /* box-shadow: 5px 5px 5px 2px rgba(71, 190, 219, 0.507); */
+        box-shadow: 0 4px 10px 0 rgba(10, 168, 196, 0.2);
+    }
+    .card-img-top{
+        max-height: 150px;
+        border-bottom: 1px solid yellow;
+    }
+    .card-body{
+        background-color: rgb(39, 29, 95);
+    }
+    .card-text{
+        min-height: 80px;
+    }
+    .btn-primary{
+        background-color: white;
+        color: black;
+    }
+    .zoom {
+        transition: transform .2s; /* Animation */
+      }
+      
+      .zoom:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.footer{
+    background-color: #131313;
+    border-top: 3px solid red; 
+    }
+    .footer-cont{
+        height: 130px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .logo:hover{
+        width: 120px;
+        height: 120px;
+    }
+    .footer-left{
+        display: flex;
+        align-items: center;
+    }
+    .texto{
+        margin: 5px 0px 5px 0px;
+        padding: 3px;
+        padding-right: 0px;
+        border-radius: 5px;
+    }
+    .sus{
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.596)
+    }
+    .boton{
+        background-color: #f7ec6b;
+        padding: 5 10px;
+        border-radius: 5px;
+}
+
+@media(max-width: 1030px){
+    .dsouls{
+        height: 400px;
+        }
+
+        .dslc{
+            flex-direction: column;
+            margin-top: 50px;
+            max-height: 800px;
+            justify-content: center;
+            background-color: gray;
+            border-radius: 20px;
+            padding-top: 20px;
+        
+        }
+        .dsl-img{
+            max-width: 600px;
+            box-shadow: 5px 5px 5px 3px rgba(73, 70, 70, 0.431);
+        }
+        .dsl-info{
+            margin-top: 15px;
+            text-align: center;
+            max-width: 600px;
+            max-height: 500px;
+        }
+        .dsl-info h1{
+            
+            margin-top: 10px;
+        }
+        .dsl-info p{
+            
+            margin-top: 15px;
+        
+        }
+            .tlmj{
+            margin-top: 400px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .dsouls{
+        height: 400px;
+        }
+
+        .dslc{
+            
+           
+            max-height: 600px;
+            
+            
+        
+        }
+        .dsl-img{
+            max-width: 400px;
+            box-shadow: 5px 5px 5px 3px rgba(73, 70, 70, 0.431);
+        }
+        .dsl-info{
+            margin-top: 15px;
+            text-align: center;
+            max-width: 400px;
+            max-height: 400px;
+        }
+        .dsl-info h1{
+            font-size: calc(2.600rem);
+            margin-top: 10px;
+        }
+        .dsl-info p{
+            font-size: 15px;
+            margin-top: 15px;     
+        }
+        .recomendados h1{
+        text-align: center;
+        }
+        .tlmj{
+            margin-top: 250px;
+    }
+}
+
+@media(max-width: 550px){
+    .dsouls{
+        background-image: url(img/darksouls/ds2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        }
+
+        .dslc{
+            flex-direction: column;
+            margin-top: 50px;
+            max-height: 600px;
+        }
+        .dsl-img{
+            width: 300px;
+            box-shadow: 5px 5px 5px 3px rgba(73, 70, 70, 0.431);
+        }
+        .dsl-info{
+            margin-top: 15px;
+            text-align: center;
+            max-width: 300px;
+            max-height: 400px;
+        }
+        .dsl-info h1{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .dsl-info p{
+            font-size: 12px;
+            margin-top: 15px;        
+        }
+        .tlmj{
+            margin-top: 100px;
+        }
+
+}
+
+
+
+
+.container{
+    border: white 1px solid;
+}
+.div{
+    border: red 1px solid;
+}
+.row{
+    border: green 1px solid;
+}
+.col{
+    border: blue 1px solid;
+}
+
+
+
+/* NEWS PAGE */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/noticias/wolfenstein.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+.hero-text {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  #1b1f2459;
+    border-radius: 30px;
+}
+.hero-text p{
+    font-size: calc(1.400rem);
+    
+}
+
