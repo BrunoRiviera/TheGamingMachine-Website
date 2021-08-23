@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllGames = (callback) => {
-    request('http://localhost:3001/games', (error, res, body) => {
+    request('https://thegamingmachine-api.herokuapp.com/games', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
