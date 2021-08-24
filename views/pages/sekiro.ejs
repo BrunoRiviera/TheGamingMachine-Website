@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/meta')%>
+</head>
+<body>
+    <%- include('../partials/header')%>
+
+    <div class="title color-white">
+      <h1>SEKIRO: Shadows Die Twice</h1>
+    </div>
+    <section>
+        <div class="container news">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <iframe src="https://cdn.cloudflare.steamstatic.com/steam/apps/256742445/movie480.webm?t=1553550374" frameborder="0" class="video-news responsive-iframe border-white"></iframe>
+            </div>
+          </div>
+          <div class="row saoinfo">
+            <div class="col">
+              <div class="slideshow-container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/news/sek/sek1.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/news/sek/sek2.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/news/sek/sek3.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="img/news/sek/sek4.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="img/news/sek/sek5.jpg" style="width:100%">
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <h1 class="color-white"> Traza tu propio camino hacia la venganza </h1>
+              <p class="color-gray"> Encarnas al 'lobo manco', un guerrero desfigurado y caído en desgracia que ha sido rescatado al borde de la muerte. Tras jurar proteger a un joven señor, te conviertes en el objetivo de despiadados enemigos. </p>
+              <p class="color-gray">Explora el Japón de la era Sengoku de finales del siglo XVI, un brutal periodo de constante conflicto, mientras te enfrentas a inconmensurables enemigos en un mundo oscuro y tortuoso..</p>
+            </div>
+          </div>
+        </div>
+        <div class="container sistreq">
+          <div class="row">
+            <h1 class="color-white">REQUISITOS DEL SISTEMA</h1>      
+            <div class="col">
+              <h2 class="color-gray">MINIMOS:</h2>
+              <h3>SO: <span class="color-white"> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit</span></h3>
+              <h3>Procesador: <span class="color-white"> Intel Core i3-2100 | AMD FX-6300</span></h3>
+              <h3>Memoria: <span class="color-white"> 4 GB de RAM</span></h3>
+              <h3>Gráficos: <span class="color-white"> NVIDIA GeForce GTX 760 | AMD Radeon HD 7950</span></h3>
+              <h3>DirectX: <span class="color-white"> Versión 11</span></h3>
+              <h3>Red: <span class="color-white"> Conección de banda ancha a internet</span></h3>
+              <h3>Almacenamiento: <span class="color-white"> 25 GB de espacio disponible</span></h3>
+              <h3>Tarjeta de sonido: <span class="color-white"> DirectX 11 compatible</span></h3>
+            </div>
+            <div class="col">
+              <h2 class="color-gray">RECOMENDADOS:</h2>
+              <h3>SO: <span class="color-white"> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit</span></h3>
+              <h3>Procesador: <span class="color-white"> Intel Core i5-2500K | AMD Ryzen 5 1400</span></h3>
+              <h3>Memoria: <span class="color-white"> 8 GB de RAM</span></h3>
+              <h3>Gráficos: <span class="color-white"> NVIDIA GeForce GTX 970 | AMD Radeon RX 570</span></h3>
+              <h3>DirectX: <span class="color-white"> Versión 11</span></h3>
+              <h3>Red: <span class="color-white"> Conección de banda ancha a internet</span></h3>
+              <h3>Almacenamiento: <span class="color-white"> 30 GB de espacio disponible</span></h3>
+              <h3>Tarjeta de sonido: <span class="color-white"> DirectX compatible con soundcard</span></h3>
+            </div>
+          </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    } 
+</script>
+</html>

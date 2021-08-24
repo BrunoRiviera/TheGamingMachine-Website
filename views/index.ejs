@@ -4,12 +4,8 @@
     <%- include('./partials/meta')%>
 </head>
 <body>
-    
-
  <%- include('./partials/header')%>
-
-   
- <main>
+<main>
   <section class="dsouls">
     <div class="container">
       <div class="row dslc d-flex">
@@ -17,7 +13,7 @@
           <img src="img/darksouls/ds1.png" alt="dark souls" class="dsl-img">
         </div>
         <div class="col dsl-info color-white">
-          <h1>NUEVO LANZAMIENTO:</h1>
+          <h1>PROXIMO LANZAMIENTO:</h1>
           <h1>DARK SOULS REMASTERED</h1>
           <p>
             Dark Souls tiene lugar en el reino ficticio de Lordran.
@@ -43,22 +39,25 @@
               <div class="carousel-item active">
                 <img src="./img/carro/crs1.png" class="d-block w-100" alt="STALKER 2">
                 <div class="carousel-caption d-none d-md-block">
-                  <h4>S.T.A.L.K.E.R 2</h4>
-                  <p>Un mundo post-apocaliptico lleno de misterios con un ambiente macabro.</p>
+                  <h1>SEKIRO: SHADOWS DIE TWICE</h1>
+                  <p>Conviertete en el Samurai mas implacable de la era Sengoku en Japón</p>
+                  <a href="/sekiro" class="btn btn-secondary">Ver el Juego</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./img/carro/crs2.png" class="d-block w-100" alt="Zombie Army">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>ZOMBIE ARMY 4</h5>
-                  <p>Accion, zombies, armas y horas de diversion.</p>
+                  <h1>S.A.O ONLINE</h1>
+                  <p>una dimension digital de un videojuego, la cual se siente muy real empieze tu aventura</p>
+                  <a href="/saofatalbullet" class="btn btn-primary">Ver el Juego</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./img/carro/crs3.png" class="d-block w-100" alt="Resident Evil 7">
                 <div class="carousel-caption d-none d-md-block">
-                  <h6>RESIDENT EVIL 7</h6>
+                  <h1>RESIDENT EVIL 7</h1>
                   <p>Uno de los juegos mas esperados del año. Infaltable en tu biblioteca.</p>
+                  <a href="/residentevil7" class="btn btn-warning">Ver el Juego</a>
                 </div>
               </div>
               </div>
@@ -86,9 +85,12 @@
             <div class="card zoom" style="width: 18rem;">
               <img src="<%= games.img%>" class="card-img-top" alt="<%= games.alt%>">
               <div class="card-body">
-                <h8 class="card-title"><%= games.title%></h8>
+                <h2 class="card-title"><%= games.title%></h2>
                 <p class="card-text"><%= games.genres%></p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <p class="card-price">Precio: <%= games.price%> $</p>
+                <div class="card-button d-flex justify-content-center">
+                  <a href="<%= games.href%>" class="btn btn-light">Ir al Sitio Oficial</a>
+                </div>
               </div>
             </div>
           </div>
@@ -96,14 +98,7 @@
       </div>
     </div>
   </section>
-</main>
-
-
-
-
-<%- include('./partials/footer')%>
-
-
-
+  
+<%- include('./partials/footer')%> 
 </body>
 </html>

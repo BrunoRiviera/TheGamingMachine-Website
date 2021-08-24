@@ -24,8 +24,12 @@ app.get('/', (req, res)=>{
         });
 
     })
-  
-})
+});
+
+app.get(`/saofatalbullet`, (req, res) => { res.render(`pages/saofatalbullet`,{title: `The Gaming Machine | S.A.O Fattal Bullet`})});
+app.get(`/residentevil7`, (req, res) => { res.render(`pages/residentevil7`,{title: `The Gaming Machine | Resident Evil 7`})});
+app.get(`/sekiro`, (req, res) => { res.render(`pages/sekiro`,{title: `The Gaming Machine | SEKIRO: Shadows Die Twice`})});
+
 app.listen(port, ()=>{
     console.log('Funcionando en el puerto 3000')
 })

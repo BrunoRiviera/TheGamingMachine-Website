@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/meta')%>
+</head>
+<body>
+    <%- include('../partials/header')%>
+
+    <div class="title color-orange">
+      <h1>RESIDENT EVIL 7</h1>
+    </div>
+    <section>
+        <div class="container news">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <iframe src="https://cdn.cloudflare.steamstatic.com/steam/apps/256665613/movie480.webm?t=1485771799" frameborder="0" class="video-news responsive-iframe border-red"></iframe>
+            </div>
+          </div>
+          <div class="row saoinfo">
+            <div class="col">
+              <div class="slideshow-container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/news/re7/re1.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/news/re7/re2.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/news/re7/re3.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="img/news/re7/re4.jpg" style="width:100%">
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="img/news/re7/re5.jpg" style="width:100%">
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <h1 class="color-red"> Camina con cuidado </h1>
+              <p class="color-gold">Resident Evil 7 biohazard es la siguiente gran entrega de la renombrada serie Resident Evil y supone un nuevo hito para la franquicia, puesto que se aprovecha de sus raíces y abre la puerta a una experiencia de miedo realmente terrorífica.</p>
+              <p class="color-gold">Encarna los elementos distintivos de la serie de exploración y atmósfera tensa con los que se acuñó el género de “terror de supervivencia” hace ya veinte años.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container sistreq">
+          <div class="row">
+            <h1 class="color-white">REQUISITOS DEL SISTEMA</h1>      
+            <div class="col">
+              <h2 class="color-gray">MINIMOS:</h2>
+              <h3>SO: <span class="color-white"> Windows7/8/10 (64-bit OS requerido)</span></h3>
+              <h3>Procesador: <span class="color-white"> Intel Core i5 3570K 3.40 GHz / AMD FX-4100 Quad-Core Processor 3.6GHz</span></h3>
+              <h3>Memoria: <span class="color-white"> 4 GB de RAM</span></h3>
+              <h3>Gráficos: <span class="color-white"> NVIDIA Geforce GTX 660 2 GB</span></h3>
+              <h3>DirectX: <span class="color-white"> Versión 11</span></h3>
+              <h3>Red: <span class="color-white"> Conección de banda ancha a internet</span></h3>
+              <h3>Almacenamiento: <span class="color-white"> 30 GB de espacio disponible</span></h3>
+              <h3>Tarjeta de sonido: <span class="color-white"> DirectX compatible con soundcard</span></h3>
+            </div>
+            <div class="col">
+              <h2 class="color-gray">RECOMENDADOS:</h2>
+              <h3>SO: <span class="color-white"> Windows 10 (64-bit OS requerido)</span></h3>
+              <h3>Procesador: <span class="color-white"> Intel Core i7-4790 3.6GHz / AMD FX-9370 8-Core 4.4GHz</span></h3>
+              <h3>Memoria: <span class="color-white"> 8 GB de RAM</span></h3>
+              <h3>Gráficos: <span class="color-white"> NVIDIA Geforce GTX 960 4GB / AMD R9 290 HD 4GB</span></h3>
+              <h3>DirectX: <span class="color-white"> Versión 12</span></h3>
+              <h3>Red: <span class="color-white"> Conección de banda ancha a internet</span></h3>
+              <h3>Almacenamiento: <span class="color-white"> 30 GB de espacio disponible</span></h3>
+              <h3>Tarjeta de sonido: <span class="color-white"> DirectX compatible con soundcard</span></h3>
+            </div>
+          </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    } 
+</script>
+</html>
