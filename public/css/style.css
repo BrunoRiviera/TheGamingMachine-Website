@@ -242,6 +242,7 @@ body{
 @media(max-width: 800px){
     .dsouls{
         height: 400px;
+        margin-bottom: 300px;
         }
 
         .dslc{
@@ -362,6 +363,9 @@ body{
     .border-white{
         border: honeydew 1px solid;
     }
+    .border-blue{
+        border: rgb(34, 146, 238) 1px solid;
+    }
 
 .saoinfo{
         padding-left: 20px;
@@ -418,7 +422,9 @@ body{
         flex-direction: column;
     }
     .slideshow-container{
-        margin-bottom: 150px;
-            
+        margin-bottom: 150px;        
+    }
+    .saoinfo p{
+        text-align: center;
     }
 }
