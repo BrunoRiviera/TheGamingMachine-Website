@@ -242,7 +242,7 @@ body{
 @media(max-width: 800px){
     .dsouls{
         height: 400px;
-        margin-bottom: 300px;
+        margin-bottom: 400px;
         }
 
         .dslc{
@@ -288,6 +288,7 @@ body{
             flex-direction: column;
             margin-top: 50px;
             max-height: 600px;
+            
         }
         .dsl-img{
             width: 300px;
